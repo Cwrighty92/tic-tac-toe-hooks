@@ -1,6 +1,6 @@
 import React from "react";
 import { shallow } from "enzyme";
-import Square from "./square";
+import Square from "../components/square";
 
 describe("index tests", () => {
   const onClick = jest.fn();
