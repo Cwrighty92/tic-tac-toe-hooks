@@ -44,9 +44,8 @@ export const Board = () => {
   }
 
   return (
-    <div>
-      <div className="status">{status}</div>
-      <button onClick={resetGame}>Reset</button>
+    <div className="board-container">
+      <div className="top-bottom-panels">{status}</div>
       <div className="board-row">
         {renderSquare(0)}
         {renderSquare(1)}
@@ -61,6 +60,11 @@ export const Board = () => {
         {renderSquare(6)}
         {renderSquare(7)}
         {renderSquare(8)}
+      </div>
+      <div className="top-bottom-panels">
+        <a className="myButton" onClick={resetGame}>
+          Reset
+        </a>
       </div>
     </div>
   );
